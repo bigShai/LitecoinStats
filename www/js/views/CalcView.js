@@ -5,7 +5,7 @@ define([
 
         events: {
             'keyup input#calc-usd': 'usdChanged',
-            'keyup input#calc-nmc': 'nmcChanged',
+            'keyup input#calc-ltc': 'ltcChanged',
             'keyup input#calc-btc': 'btcChanged'
 
         },
@@ -16,17 +16,17 @@ define([
 
         usdChanged: function (e) {
             var usdVal = $(e.target).val();
-            var nmcVal = usdVal / this.model.get('usd').ticker.last;
-            var btcVal = nmcVal * this.model.get('btc').ticker.last;
+            var ltcVal = usdVal / this.model.get('usd').ticker.last;
+            var btcVal = ltcVal * this.model.get('btc').ticker.last;
 
-            this.$('#calc-nmc').val(nmcVal);
+            this.$('#calc-ltc').val(ltcVal);
             this.$('#calc-btc').val(btcVal);
         },
 
-        nmcChanged: function (e) {
-            var nmcVal = $(e.target).val();
-            var usdVal = nmcVal * this.model.get('usd').ticker.last;
-            var btcVal = nmcVal * this.model.get('btc').ticker.last;
+        ltcChanged: function (e) {
+            var ltcVal = $(e.target).val();
+            var usdVal = ltcVal * this.model.get('usd').ticker.last;
+            var btcVal = ltcVal * this.model.get('btc').ticker.last;
 
             this.$('#calc-usd').val(usdVal);
             this.$('#calc-btc').val(btcVal);
@@ -35,11 +35,11 @@ define([
 
         btcChanged: function (e) {
             var btcVal = $(e.target).val();
-            var nmcVal = btcVal / this.model.get('btc').ticker.last;
-            var usdVal = nmcVal * this.model.get('usd').ticker.last;
+            var ltcVal = btcVal / this.model.get('btc').ticker.last;
+            var usdVal = ltcVal * this.model.get('usd').ticker.last;
 
             this.$('#calc-usd').val(usdVal);
-            this.$('#calc-nmc').val(nmcVal);
+            this.$('#calc-ltc').val(ltcVal);
 
         }
 

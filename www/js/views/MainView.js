@@ -49,7 +49,7 @@ define([
                 thisView.model.set(currency, data);
             };
 
-            var btceurl = 'https://btc-e.com/api/2/nmc_'+currency+'/ticker';
+            var btceurl = 'https://btc-e.com/api/2/ltc_'+currency+'/ticker';
 
             $.ajax({
                 url: btceurl,

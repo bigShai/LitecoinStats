@@ -28,7 +28,7 @@ define([
             blogSearch.setSearchCompleteCallback(this, searchComplete, null);
 
             // Specify search quer(ies)
-            blogSearch.execute('Namecoin');
+            blogSearch.execute('Litecoin');
 
 //            // Include the required Google branding
 //            google.search.Search.getBranding('branding');

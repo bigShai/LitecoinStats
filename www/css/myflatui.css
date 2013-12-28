@@ -120,3 +120,7 @@ while the page get the panel them before opening the panel. */
     border: 1px solid white;
 }
 
+html .ui-bar-a {
+    color: #000000;
+    background-color: #DDDDF7;
+}
