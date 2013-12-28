@@ -1,2 +1,2 @@
-NamecoinStats
+LitecoinStats
 =============
