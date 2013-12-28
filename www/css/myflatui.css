@@ -124,3 +124,7 @@ html .ui-bar-a {
     color: #000000;
     background-color: #DDDDF7;
 }
+
+html .ui-bar-e .ui-btn, html .ui-bar-e .ui-btn.ui-btn-active{
+    color: #000000;
+}

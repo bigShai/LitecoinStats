@@ -8,7 +8,7 @@ module.exports = function(grunt){
                 options: {
                     "archive" : "",
                     "isRepository": "true",
-                    "appId": "706104",
+                    "appId": "712941",
                     "user": {
                         "token":"sen6VfutU9y4Fi4EpHN1"
                     }
@@ -17,7 +17,7 @@ module.exports = function(grunt){
             debug: {
                 options: {
                     archive: "app.zip",
-                    "appId": "706104",
+                    "appId": "712941",
                     "user": {
                         "token":"sen6VfutU9y4Fi4EpHN1"
                     }
