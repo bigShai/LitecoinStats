@@ -37,12 +37,13 @@
     <preference name="android-installLocation" value="auto" />
 
     <icon src="icon.png" />
-    <!--<icon src="icon-57.png" gap:platform="ios" width="57" height="57" />-->
-    <!--<icon src="icon-72.png" gap:platform="ios" width="72" height="72" />-->
-    <!--<icon src="icon-114.png" gap:platform="ios" width="114" height="114" />-->
 
-    <!--&lt;!&ndash; retina iPad support: PhoneGap 2.5.0+ only &ndash;&gt;-->
-    <!--<icon src="icon-144.png" gap:platform="ios" width="144" height="144" />-->
+    <icon src="icon-57.png" gap:platform="ios" width="57" height="57" />
+    <icon src="icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="icon-114.png" gap:platform="ios" width="114" height="114" />
+
+    <!-- retina iPad support: PhoneGap 2.5.0+ only -->
+    <icon src="icon-144.png" gap:platform="ios" width="144" height="144" />
 
     <plugin name="SplashScreen" value="CDVSplashScreen" />
     <gap:splash src="splash.png" />
